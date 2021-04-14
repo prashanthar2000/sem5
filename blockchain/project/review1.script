@@ -1,0 +1,30 @@
+Constraints:
+There are no special constrains , just the normal blockchain dissadvantages . 
+As the blockchain grows larger it is going to take huge memory space, hence the insertion of data will take huge amounts of computation power which leads to longer time for an transaction  to occer .
+the 2nd drowback is that when there is transfer of any copyrights, that perticular block is no longer usable.
+
+when we come to the Risks of this technology: 
+as we are using ethereum which  makes the system lack scalability and use relatively old algorithms.
+the 2nd risk is.... the system lacks to find fake certificates ,therefore we need a 3rd party or a human vetting before input.
+
+the Assumptions are:
+#//at 1st , ie in the begging of the blockchain 
+The information given to the blockchain for the first time is perfectly correct.ie there is no way to verify vay to verify the information give to the blockchain for the 1st time is valid or invalid. there fore it is considered valid
+The copyrights are still valid. 
+The right holder is still alive.
+
+
+wipo
+
+
+Requirement specification
+
+there are no huge requirement .
+they just need a Computers which has sufficient RAM and processing power to just an run ethereum network is enough.
+the users have to  set up the given ethereum network.
+they must posses A globally acceptable copyright format.
+
+
+OK Conclustions
+we have proposed an accountable copyright management system.The system .... which prevents tampering and has a high degree of transparency as it uses a block chain technology with data shared throughout several nodes . This model or the blockchain is managed and distributed by registering as a token on a blockchain. 
+

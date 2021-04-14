@@ -1,0 +1,4 @@
+1.  Y are we creating token on insertion of new user . token should be created only when new art is submitted ( when we click on create token :) right ? ) 
+2.  I didn't get the point of using Privelegelevel , if he has the token then he is the owner  else he is viewer . 
+3.  ext of 1. if we are not creating token on insertion of new user , then Privelegelevel parameter can be removed.
+4. I guess what u mean by Privelegelevel is ,  is it sellable or not ?? if not do we need a parameter to do this ?  
