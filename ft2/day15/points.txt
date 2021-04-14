@@ -1,0 +1,59 @@
+debugging:
+- removing a fault
+- removing errors at runtime
+- not concerned about understanding and/or removing compile time errors
+debugger :
+	- run the program under its control
+	- stop the program at any point/any event
+	- step through the execution line by line
+	- check the state of variables
+	- if the program crashes, tell on which line in which function we were
+	
+	- is just a tool
+	- not intelligent to find the logical errors
+	
+gdb : gnu debugger
+
+------------------
+
+- gdb <loadable image>
+	loadable image is obtained by compilation and linking
+gdb command:
+r : runs the loaded image
+l : listing the program
+symbol table : created during the compilation process
+               built in stages
+               destroyed at the end
+               image by default has no variable name, no function name
+               		has no program source code
+how to make symbol table persistent in the image?
+	use an option called -g
+
+l : listing : options : line # or line#,line# or function_name
+
+break point: b
+point in the code(line # or function name) at which the program should wait
+
+s : step ; single stepping; make the program execute line by line
+p : print ; print an expr
+c : continue
+bt : back trace
+	shows the stack frames; order of fn calls
+frame # : change the frame to inspect the variables
+
+fn call: either step in or step over
+----------------
+
+create core files
+- ulimit -c 1000
+- run the program faulty
+- check creation of core file
+debug core :
+gdb <image> <core>
+
+
+
+
+
+
+   

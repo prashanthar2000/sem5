@@ -1,0 +1,25 @@
+data structure used is a binary tree 
+Implementaion of general purpose tree using binary tree .
+struct node
+{
+    char *key;
+    struct node *left;
+    struct node *right;
+}
+create_node creates a node_t and returns its pointer 
+add_node adds a node give the parent 
+    it searchs for left node if its null then no child is present so create node 
+    if left is present traverse to right till u hit NULL create node there
+memo keep track of parent nodes 
+main_gen takes tree as parameter and generates the code for it
+gen_while,gen_case,prolong,gen_header,close while, close case are sir code with minor changes
+gen_tree is a wrapper function for gen_tree_r
+its  a recursive code (kind of inorder traversal) keeping track of case count and which level it is currently in
+
+takeaway from the assignment 
+we learnt about GPT using binary tree 
+how to generate code . 
+
+could have been more challenging hope will get more challenging assignment from now on
+
+

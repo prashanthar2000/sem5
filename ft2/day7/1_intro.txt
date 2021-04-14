@@ -1,0 +1,24 @@
+Regular Expressions:
+is a language
+classified into 4 categories : Chomsky's hierarchy
+simplest
+type 3 language
+formal machine : finite state automaton
+----------------
+string matching:
+many lang have regular expression library
+regex : far more powerful than the classical regex engine
+- type 1 language
+---------------
+0. simple pattern matching 
+   check for a substring(pattern) in another(text or subject)
+1.   single char regex
+2. mutliple char regex
+3. anchoring
+4. back reference or memory
+5. modify a string 
+
+# check
+# r'\'
+# '\\'
+

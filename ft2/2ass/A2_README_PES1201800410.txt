@@ -1,0 +1,31 @@
+Assignment 2 
+PES1201800410 sem V     A R PRASHANTH
+
+1) Android Logcat Service Summary
+
+it is assumed that the file is like pipe and the timestamp is in sorted order .
+file to process as an when the log appears in the file
+
+was a basic regex problem not so hard , the easiest of all .
+learnt who to process log files using regex , get valuale insites out of it
+
+2) XML File Processing
+
+no general details on how to run , or any of my assumtion
+
+learnt about xml standards 
+how to use regex to find our mistakes 
+there was too much ambiguity in the question though .
+
+3) Shell Script Processing
+
+not handled case : if a code is inside a quotes 
+example:
+echo "if [condition] then ;
+    echo "something"
+fi"
+
+as this a valid code , but my code doesn't handle such cases 
+
+learnt how to reduce redundant function or dummy/empty function 
+learnt how to process bash script (any script ) to reduce based on ur needs using regex 

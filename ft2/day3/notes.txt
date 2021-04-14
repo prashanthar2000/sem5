@@ -1,0 +1,3 @@
+ulimit -a 
+ulimit -c 6000 #6000 is size to enable core file
+

@@ -1,0 +1,115 @@
+awk :
+	tool developed on unix
+	developed by Aho Weinberger Kernighan
+	can do number crunching
+	can also do string manipulation
+
+looping to read records from a file or number of files is builtin
+pgm consists of rules
+each rule :
+pattern { action }
+:
+.
+
+
+on each line (default record is a line), the rules are applied in
+sequence. if the pattern matches, corr action is performed
+
+Run awk :
+a) awk 'script' <filename> ...
+b) awk -f <awkfile> <filename> ...
+c) ./<awkfile>
+first line :
+#! /usr/bin/awk -f
+/*
+a) run a particular version
+b) server side script has to be specified as a single word
+*/
+commands:
+print
+	outputs the whole rec
+print $2
+	prints second fld
+	field sep by default is one or white space
+no relation bet cmd line arg and $1 $2 ... 
+ARGV holds the cmd line arg
+FILENAME which file is being processed
+
+change the field sep from cmd line : -F<sep>
+
+awk reads a line each time from the file
+breaks into words referred as $1 $2 ...
+for awk variables, $ is never used
+
+awk -F: '{print FILENAME, $1}' /etc/passwd /etc/group | more
+
+if in a rule,
+we have only action, 
+	it is carried for each line of input file(s)
+we have only pattern
+	lines matching the pattern are displayed {print}
+	{print $0}
+	$0 :input record
+
+
+awk -F: '{print FILENAME, NF, $NF}' /etc/passwd 
+
+NF : # of fields
+$NF : last field
+FS : field separator
+NR : No. of Record
+OFS
+RS : record sep
+ORS : output record sep
+
+
+builtin variables are in uppercase
+user should use lowercase for user defined variables
+
+variables :
+	similar to c
+	no declaration
+operators :
+ 	+ - * / %
+	=
+
+patterns :
+regex
+	/kumar/
+	$8 ~ /awk/
+	! /kumar/
+relational :
+	$5 > 100
+	< <= > >= == !=
+	can compare numbers and strings
+compound :
+	! && ||
+	/awk/ && $5 > 100
+BEGIN
+	special pattern
+	always matched before any other rule
+	change the field separator
+	FS=":"
+
+END
+	executed only at the end of input
+
+range pattern
+<pattern>,<pattern>
+
+
+associative array
+	array indexed by strings
+
+action :
+control structure:
+	if
+	while
+	for
+		similar to C
+	for 
+		similar to shell
+		walk thro associative array	
+		
+		
+

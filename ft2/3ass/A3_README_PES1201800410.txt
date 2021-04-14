@@ -1,0 +1,12 @@
+[a-z] -- range works
+[a-z189130] -- range with single char works 
+//doesn't take care of duplicate char inside the char class thought 
+^ , $ , ? , \d , \w -- works 
+<anything>* -- (greedy) works
+<anything>*? -- (non greedy) works 
+<anything>+ --( greedy) works 
+//non greedy with plus not implemented
+
+struct regex_t is used to store regex expression . 
+re_compile converts char to regex_t structure 
+re_search searches for regex in text 

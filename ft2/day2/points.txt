@@ -1,0 +1,43 @@
+Tree representation:
+	node based with dynamic allocation
+	in an array, where there are couple of fields left and right subtree
+	heap (2i, 2i + 1, floor(i/2))
+	
+	as a graph
+	
+Graph representation:
+	adjancency matrix
+	adjancency list
+	incidence matrix
+	
+ parallel edges?
+ self loops?
+ nodes have keys
+ nodes and edges have keys
+ 
+------------------
+
+General purpose tree:
+- directory structure
+- hierarchy in an organization
+- scheduling of task
+
+----------------
+interface and implementation
+what  and how
+interface : header file
+
+int *p; or int* p; // no diff
+int* p, q; // is q a pointer? NO
+one variable in a declaration
+
+int m, n; // bad code
+int m; int n; // good
+
+
+
+
+
+
+
+		

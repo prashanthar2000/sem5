@@ -1,0 +1,190 @@
+#! /usr/bin/python3.7
+
+import sys 
+import re
+
+def disp(_listvar):
+    for i in _listvar:
+        print(repr(i))
+
+#remove empty line , extra spaces at the end of line and comments
+def remove_comment(text):
+    text = re.sub(r'#.*', "",text)
+    text = re.sub(r"\s*$", "" , text)
+    # if text == "":
+    #     return ""
+    return text 
+
+
+#see if the 1st line has shebang
+def hasshebang(text):
+    if re.search('^#!', text):
+        return text[:-1]
+    return remove_comment(text)
+
+
+
+fp = open(sys.argv[1] , 'r')
+
+i = fp.readline()
+
+# find if shebang present 
+first_pass = hasshebang(i)
+if first_pass == "":
+    first_pass = []  
+else:
+    first_pass = [first_pass]
+
+for i in fp.readlines():
+    temp = remove_comment(i)
+    if temp != "":
+        first_pass.append(temp)
+
+disp(first_pass)
+print('-'*20 + "remove if-fi" + '-'*20)
+# first_pass = first_pass.split('\n')
+
+#remove if-fi
+###############flaw it can't process if fi statement incide a staring or quote or a double quote#####
+def remove_if(texts):
+    is_if = 0 # tell no of if 1 for normal , 2... for nexted if statements
+    second_pass = []
+    # print(texts)
+    for i in texts:
+        # print(is_if , i)
+        # if not is_if:
+            # print(i , "\tsanity check")
+        if re.search(r"(^|\s+|;)if\s+", i):
+            is_if += 1
+            # print(i)
+            m = re.search(r"(^|\s*|;)if.*(\s|;)fi(\s+|$)", i)
+            if m:
+                if m.group(1) == ";":
+                    i = re.sub(r"(^|\s*|;)if.*(\s|;)fi(\s+|$)" , ";" , i)
+                else:
+                    i = re.sub(r"(^|\s*|;)if.*(\s|;)fi(\s+|$)" , "" , i)        
+                # print(i)
+                second_pass.append(i)
+                is_if -= 1
+        
+        elif re.search(r"fi", i):
+            is_if -= 1
+        elif not is_if:
+            
+        # else:
+        #     # print(i)
+        #     # is_if -= 1 
+            second_pass.append(i)
+
+    return second_pass
+                
+second_pass = remove_if(first_pass)
+disp(second_pass)
+
+print('-'*20 , "remove dummy function" , '-'*20)
+
+#remove redundant
+#####################same as if-fi one doesn't check if it has nested {} or if it is incide quotes##
+def remove_rdnt_func(texts):
+    third_pass = []
+    # d = {} 
+    # func_name = "" #to hold function name
+    is_func = 1 #are we inside a function? 0 is yes 1 is no , so initially no  
+    bracket_count = 0 #to count the number of brackets
+    for i in texts: 
+        # print(third_pass)
+        if is_func:
+                        
+            m = re.search(r".*?\(\)", i)
+            if m:
+                is_func = 0
+                func_name = i
+                # print(i)
+            else:
+                # print(i)
+                third_pass.append(i)
+        elif "{" in i:
+            third_pass.append(func_name)
+            third_pass.append(i)
+            bracket_count = 1
+        elif '}' == i:
+            is_func = 1
+            if(bracket_count):
+                if(third_pass[-1] == "{"):
+                    third_pass.pop()
+                    third_pass.pop()
+                else:
+                    third_pass.append(i)
+                bracket_count = 0
+        elif bracket_count:
+            third_pass.append(i)
+
+    return third_pass
+
+
+third_pass = remove_rdnt_func(second_pass)
+disp(third_pass)
+ 
+print('-'*20 , "Take care of alias" , '-'*20)
+
+def rdnt_alias(texts):
+    final_pass  = []
+    d = {}
+    
+    for i in texts:
+        # m = re.search(r"alias\s+(\w+)=(["'])(\w+)['"]", i)
+        m = re.search(r"alias\s+(.*?)=([\"\'])(.*?)[\"\']" , i )
+        if m:
+            d[m.group(1)] = (m.group(3) , m.group(2) , len(final_pass))
+        else:
+            final_pass.append(i)
+    # print(d)
+    
+    def find_rec(x , d):
+        # global d 
+        if x in d:
+            a = d[x]
+            del d[x]
+            
+            d = {k:v for k , v  in d.items() if v[0] != a[0]}
+            # for k,v in d.items():
+            #     if v[0] == a[0]:
+            #         d.pop(k)
+            
+            # print(d)
+            return find_rec(a[0], d)
+        else:
+            return x , d
+    
+    l = []
+    if d:
+        l = next(iter(d))
+    # print(l)
+    
+    # def delete_rec(x , d):
+        # if x in d.keys()
+    while(l):
+        quote = d[l][1]
+        line_number = d[l][2]
+        
+        a , d = find_rec(l , d)
+        # del d[a[0]]
+        # print(a , line_number)
+        final_pass.insert(line_number , "alias " + l + "=" + quote + a + quote)
+        if d:
+            l = next(iter(d))
+        else:
+            l = []
+        
+        # print(a, "y is echo printing")    
+        
+            
+    # rec = lambda x : d[x]
+    # while(d):
+    return final_pass
+        
+
+final_pass = rdnt_alias(third_pass)
+disp(final_pass)
+# for i in final_pass:
+#     print(i)

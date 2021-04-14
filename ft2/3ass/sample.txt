@@ -1,0 +1,16 @@
+Hello there. This is a sample text for the input. abcd9
+14
+the
+abc[a-z\*\?0-9]*
+9+a+
+H*
+Hello?
+b*
+b*?
+b?
+Hel*?
+b?[Hh][He]
+[Hhe]*?
+[Hhe]*
+z
+

@@ -1,0 +1,45 @@
+Beautiful code: Andy Oram and Greg Wilson, 2007
+	has articles written by 33 great developers
+	
+Development of regular expression engine : Kernighan
+
+books:
+The C programming Language : K & R
+Programming in the Unix environment : K & pike(?)
+The practice of programming : H & Pike
+The D is for digital : K ...
+The programming style : K & Plaugher
+The software tools : K & Plaugher(?)
+
+tool:
+AWK : string manipulation and number crunching
+		Aho, Weinberger and Kernighan
+			
+Thompson : designed Unix; designed lang called GO
+
+---------------------------------------------------
+
+Jon Bentley : authority on optimization
+	- efficient programming in 'C'
+	- programming pearls
+	- more programming pearls
+average case complexity of quicksort by statistical method
+	Most beautiful program I never wrote
+		
+Alexanderscu's blog about quicksort
+--------------------------------------- 
+
+developing a regular expression engine:
+pat : pattern
+text : subject or text
+both these are C arrays
+char pat[] or char *pat as parameter names
+pat[0] or *pat to refer to the first char
+
+-----------------------------------------
+
+main returns 0 by default
+return in main is a requirement if something goes wrong
+$? has the return value in the shell
+------------------------------------------
+
