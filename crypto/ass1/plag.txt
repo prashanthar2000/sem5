@@ -1,0 +1,86 @@
+Further a new protocol WPA2 was proposed by the Wi-Fi alliance which uses AES block cipher as an encryption algorithm instead of RC4. 
+Though WPA2 is a secure protocol, removing many weaknesses of WEP and WPA but its hardware based applications are not cost effective as compare to WEP and WPA where RC4 was used as a basic module
+
+insecure . . Further
+inspite of all the developments reported in the literature, there
+are still many open research challenges and issues related
+to searches of more biases, key collisions in keystream, and
+key recovery attack on WPA .The conclusion is there is still
+research going on , on RC4 to make it more efficient and
+effective encryption algorithm
+
+
+CONCLUSION
+In this paper i have presented a brief study of RC4
+,about is robust feature and its weaknesses . How easy
+it is to implement on hardware and software .We have
+presented a broad varieties of RC4 algorithms improving the
+security aspects of RC4 . It was widely used in wireless
+communication( like WEP and WPA) and web security like
+TLS/SSL until it was declared to be insecure . . Further
+inspite of all the developments reported in the literature, there
+are still many open research challenges and issues related
+to searches of more biases, key collisions in keystream, and
+key recovery attack on WPA .The conclusion is there is still
+research going on , on RC4 to make it more efficient and
+effective encryption algorithm.
+ACKNOWLEDGMENT
+Thanking the PES Institution and the Teachers for their
+support, Guidance and encouragement.
+REFERENCES
+[1]Alfred J. Menezes, Paul C. van Oorschot, and Scott A.
+Vanstone. Hand- book of Applied Cryptography. CRC Press,
+August 2011 edition, 1996. Fifth Printing
+[2] J. Xie, X. Pan, —An Improved RC4 Stream Cipher||,
+2010 International Conference on Computer A pplication and
+System Modeling, (ICCASM 2010), pp. (V7) 156-159, 2010
+[3]Ronald L. Rivest. RSA security response to weaknesses in
+key scheduling algorithm of RC4. Technical note, RSA Data
+Security, Inc., 2001.
+[4] Scott R. Fluhrer, Itsik Mantin, and Adi Shamir. Weaknesses
+in the key scheduling algorithm of RC4. In Serge Vaudenay
+and Amr M. Youssef, editors, Selected Areas in Cryptography,
+volume 2259 of Lecture Notes in Computer Science, p. 1–24.
+Springer, 2001.
+[5] Korek. Need security pointers. Published online at
+http://www.netstumbler.org/showthread.php?postid=89036
+[6] Itsik Mantin. A practical attack on the fixed RC4 in the
+WEP mode. In Bimal K. Roy, editor, ASIACRYPT, volume
+3788 of Lecture Notes in Computer Science, p. 395–411.
+Springer, 2005.
+[7] Erik Tews and Martin Beck. Practical attacks against
+WEP and WPA. In David A. Basin, Srdjan Capkun, and
+Wenke Lee, editors, WISEC , p. 79–86. ACM, 2009
+[8] Pouyan Sepehrdad, Serge Vaudenay, and Martin Vuagnoux.
+Statistical attack on RC4 - distinguishi ng WPA. In Kenneth
+G. Paterson, editor, EUROCR YPT, volume 6632 of Lecture
+Notes in Computer Science, p. 343–363. Springer, 2011
+[9] Santanu Sarkar, Sourav Sen Gupta, Goutam Paul, and
+Subhamoy Maitra. Proving TLS-attack related open biases of
+RC4. IACR Cryptology ePrint Archive, 2013:502, 2013.
+[10]Souradyuti Paul; Bart Preneel (2004), ”A New Weakness
+in the RC4 Keystream Generator and an Approach to Improve
+the Security of the Cipher”, Fast Software Encryption, FSE
+2004, Lecture Notes in Computer Science, 3017, Springer-
+Verlag, pp. 245–259, doi:10.1007/978-3-540-25937-4 16,
+ISBN 978-3-540-22171-5, retrieved 4 November 2011
+[11]Bartosz Zoltak (2004), ”VMPC One-Way Function
+and Stream Cipher” (PDF), Fast Software Encryption,
+FSE 2004 (PDF), Lecture Notes in Computer Science,
+3017, Springer-Verlag, pp. 210–225, CiteSeerX
+10.1.1.469.8297,doi:10.1007/978-3-540-25937-4 14, ISBN
+978-3-540-22171-5, retrieved 4 November 2011
+[12]Rivest, Ron; Schuldt, Jacob (27 October 2014). ”Spritz –
+a spongy RC4-like stream cipher and hash function” (PDF).
+Retrieved 26 October 2014
+[13]Subhamoy Maitra; Goutam Paul (19 September 2008),
+”Analysis of RC4 and Proposal of Additional Layers for Better
+Security Margin”, Progress in Cryptology – INDOCRYPT
+2008 (PDF), Lecture Notes in Computer Science, 5365,
+Springer-Verlag, pp. 27–39, CiteSeerX 10.1.1.215.7178,
+doi:10.1007/978-3-540-89754-5 3, ISBN 978-3-540-89753-8,
+Cryptology ePrint Archive: Report 2008/396, retrieved 4
+November 2011
+
+
+

@@ -1,0 +1,31 @@
+[('P', 69),
+ ('L', 50),
+ ('C', 47),
+ ('H', 47),
+ ('R', 39),
+ ('G', 37),
+ ('D', 36),
+ ('E', 32),
+ ('M', 31),
+ ('K', 29),
+ ('W', 26),
+ ('J', 23),
+ ('T', 14),
+ ('V', 14),
+ ('N', 13),
+ ('F', 11),
+ ('Y', 11),
+ ('I', 9),
+ ('B', 6),
+ ('Z', 6),
+ ('O', 5),
+ ('A', 3),
+ ('X', 2),
+ ('Q', 0),
+ ('S', 0),
+ ('U', 0)]
+ 
+monoalphabetic cipher is a substitution cipher in which for a given key the cipher alphabet for each plain alphabet is fixed throughout the encryption process for example if a is encrypted as d for any number of occurrence in that plaintext a will always get encrypted d all of the substitution ciphers we have discussed earlier in the chapter are monoalphabetic these ciphers are highly susceptible to cryptanalysis polyalphabetic cipher is a substitution cipher in which the cipher alphabet for the plaintext
+
+
+mono alphabetic cipher is a substitution cipher in which for a given key the cipher alphabet for each plain alphabet is fixed throughout the encryption process for example if a is encrypted as d for any number of occurrence in that plain text a will always get encrypted d all of the substitution ciphers we have discussed earlier in the chapter are mono alphabetic these ciphers are highly susceptible to crypt analysis poly alphabetic cipher is a substitution cipher in which the cipher alphabet for the plain text    
