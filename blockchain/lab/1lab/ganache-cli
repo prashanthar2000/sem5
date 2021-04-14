@@ -1,0 +1,162 @@
+Ganache CLI v6.10.1 (ganache-core: 2.11.2)
+
+Available Accounts
+==================
+(0) 0x64D72F3fA03B2076fb93e0FEB1B8ebF685F63780 (100 ETH)
+(1) 0xBb2b88e4651Da3212bea83cc75325A8094988Fc7 (100 ETH)
+(2) 0x9330d6Cc5d951b90f2102a2fEbfEBBd1f603CCBc (100 ETH)
+(3) 0xe5C1985484b57B9C35A8F6745CE6e51fA1314c19 (100 ETH)
+(4) 0xDFFDf7558330DbB57F993790128EFb1661AD49d5 (100 ETH)
+(5) 0x3c4328419F226a81807DBBeB5b30491f04B23f69 (100 ETH)
+(6) 0x26BE9Ea5aFAD06694F5AA96A717001EBbDF53814 (100 ETH)
+(7) 0x64fe1606D7029E7f014614eb50f316EfdEFcD26d (100 ETH)
+(8) 0xe07F020b65DE653A737fa2c8c624de3034508ECb (100 ETH)
+(9) 0xD35Cc44c054ADbfB2d6E5D1D0702F2c4a1fe3709 (100 ETH)
+
+Private Keys
+==================
+(0) 0x6c0f7c7bbc4f3bd06fc1cdbd61513fee34a880362b5426ea0673cce30faac82f
+(1) 0x24973ed28bb1c6d4aec07ffeeecf58b7dbbd4d73e87f87fdefa0a933dcb5bce8
+(2) 0x0aac94a55dd40f877503c15cd06d1e0dd3edc1edeb2c6b5833780e17a3cfa3cc
+(3) 0x98db281f0d90dce41b47e5dd2867aa58692b620f9fe52523d00c809e6690b64b
+(4) 0xc6f5b4b105898b4b840a40d9ab9362e48342cf41e2c29346b5d10788bd9abe1a
+(5) 0xca1e301089409fcbb146dccd6690945d8081241b213c59416886eb91ab68ed33
+(6) 0xc0f5900170928d694ef54c5053f475476446f7545c6c191006bce673e9d8aff4
+(7) 0x85e4de74e940bee476de0cab9322c250a6d89c0fa0c2f834e1fe90bb2e72366d
+(8) 0x37dfa9dce3263303f6b85f1c7a5fee6c25315d5419abcdc02c61b21c690cc913
+(9) 0x051b49869fd528c751d57ac324dc87bce1591f12848528390c6ce9dfcf649038
+
+HD Wallet
+==================
+Mnemonic:      pistol weather town confirm aerobic walk scissors final require silk drum hundred
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Gas Price
+==================
+20000000000
+
+Gas Limit
+==================
+6721975
+
+Call Gas Limit
+==================
+9007199254740991
+
+Listening on 127.0.0.1:8545
+eth_accounts
+eth_sendTransaction
+
+  Transaction: 0x7c4be51f56f30c5eaf2526d3315bedbf2c219cfad0f191c1bd106222a178598c
+  Contract created: 0x8c77c08fcbb76a2583cc2669bc133752524e240e
+  Gas usage: 318764
+  Block Number: 1
+  Block Time: Sat Aug 29 2020 16:15:51 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_getCode
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x2d20c35f60b4a3f86fec0a22fcb2a644dead9157ac330f14337940efd0c44383
+  Gas usage: 45168
+  Block Number: 2
+  Block Time: Sat Aug 29 2020 16:17:00 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_accounts
+eth_call
+eth_call
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x87f6cf9f7fd8e02f4defb493652825a7a382a4e7843e9116c7083c8b84d7e428
+  Gas usage: 47782
+  Block Number: 3
+  Block Time: Sat Aug 29 2020 16:19:41 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0xf2d8298de86a64734d4d559709948ebb6cfc79603b46f9533cd0990526fad007
+  Gas usage: 32782
+  Block Number: 4
+  Block Time: Sat Aug 29 2020 16:19:42 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x89dfe58969daec2e0e3b678a30789e6bf88de597e17f14c2f278f6e611ade71c
+  Gas usage: 32782
+  Block Number: 5
+  Block Time: Sat Aug 29 2020 16:19:43 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x6ff0ee15ddff75db9987ea1c4f029ec357e111ddaa7e5dd0473e0648d5f9fa4a
+  Gas usage: 32782
+  Block Number: 6
+  Block Time: Sat Aug 29 2020 16:19:43 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x36edb201bf43379cebfebc69b5122fd2f93047be8b2cad0841254021524ddf89
+  Gas usage: 50396
+  Block Number: 7
+  Block Time: Sat Aug 29 2020 16:19:49 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0xb8dd3f59c9f54f00392a24308a75880df80b3f7063a0a451bda972587a072a57
+  Gas usage: 35396
+  Block Number: 8
+  Block Time: Sat Aug 29 2020 16:19:49 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_gasPrice
+eth_call
+eth_sendTransaction
+
+  Transaction: 0x1cea71f4b23ffb582e36050eabc76dba38517e522557f632b0bf3578d8f1085c
+  Gas usage: 35396
+  Block Number: 9
+  Block Time: Sat Aug 29 2020 16:19:50 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x13fc82285bd6a536931d143bbcd5ef297e0bb3ccebc0b1b240b7c9293d1ace88
+  Gas usage: 30168
+  Block Number: 10
+  Block Time: Sat Aug 29 2020 16:19:59 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0xc31f729dd01432f0b7e7cccb8e956346b1f0e5a93bbf5a27019fe8d79a948c9a
+  Gas usage: 30168
+  Block Number: 11
+  Block Time: Sat Aug 29 2020 16:19:59 GMT+0530 (India Standard Time)
+
+eth_getTransactionReceipt
+eth_call
